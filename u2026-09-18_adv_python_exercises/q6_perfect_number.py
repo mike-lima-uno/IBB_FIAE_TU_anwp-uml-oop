@@ -12,11 +12,10 @@ def is_perfect(number: int) -> bool:
         return False
 
     divisors = [i for i in range(1, number) if number % i == 0]
-
     return sum(divisors) == number
 
 if __name__ == "__main__":
-    test_numbers = [1,2,3,6, 28, 496, 1000, 8128, 12, 237, 854, 901, 8000, 97]
+    test_numbers = [1,2,3,6, 12, 97, 28, 237, 496, 854, 901, 1000, 8000, 8128]
 
     for num in test_numbers:
-        print(f"{num}: \t {'is' if is_perfect(num) else 'is not'} a perfect number.")
+        print(f"{num}: \t {'is' if is_perfect(num) else "ISN'T"} a perfect number.")
