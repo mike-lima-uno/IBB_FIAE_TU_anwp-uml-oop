@@ -1,0 +1,11 @@
+@startuml uml_01
+
+scale 2
+
+class Person {
+	+name: String
+	+age: int
+	+sayHello(): void
+}
+
+@enduml

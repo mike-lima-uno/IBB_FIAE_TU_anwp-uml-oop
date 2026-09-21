@@ -1,0 +1,11 @@
+@startuml uml_02
+
+scale 2
+
+class Car {
+    +brand: String
+    +start(): void
+    +stop(): void
+}
+
+@enduml
